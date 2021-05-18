@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    position: absolute;
+    background-image: url(../Downloads/vishnu-r-nair-m1WZS5ye404-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 1400px 630px;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 100%;
+    height: 55px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.384);
+}
+.navhead{
+    position: absolute;
+    color:rgb(231, 222, 222);
+    padding: 3px;
+    float: left;
+    margin-left: 22px;
+    margin-top: 8px;
+    font-family: 'Reggae One', cursive;
+    font-weight: 10px;
+}
+.navhead:hover{
+    color: rgba(255, 255, 255, 0.623);
+    transition: .8s;
+}
+.textnav{width: auto;
+    float: right;
+    margin-top: 6px;
+}
+.textnav li{   
+    display: inline-block;
+    padding: 12px 10px;
+    border-radius: 7px;
+}
+.textnav li:hover{
+    transition: .7s;
+    background-color: rgba(223, 217, 217, 0.315);
+    box-shadow: 3px 3px 1px rgba(173, 170, 170, 0.479);   
+}
+a{
+    text-align: center;
+    color: rgb(233, 219, 219);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 14px;
+}
+div h1{
+    position: absolute;
+    color: rgba(27, 24, 24, 0.932);
+    font-family: 'Reggae One', cursive;
+    font-size: 85px;
+    left: 10cm;
+    top: 5cm;
+}
+div h1:hover{
+    color: rgba(20, 2, 2, 0.705);
+
+}
+.bottom{
+    position: absolute;
+    background-color: rgb(238, 232, 232);
+    opacity: .6;
+    top: 16.7cm;
+    width: 100%;
+    height: 16.5cm;
+    overflow: auto;
+}
+.not1{
+    position: absolute;
+    height: 11.5cm;
+    background-color: rgb(247, 243, 243);
+    top: 20cm;
+    width: 25%;
+    border-radius: 8px;
+    left: .8cm;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.76);
+}
+.not2{
+    position: absolute;
+    background-color: rgb(243, 241, 241);
+    height: 9.5cm;
+    width: 8cm;
+    margin-left: .5cm;
+    top: 1.2cm;
+    border-radius: 8px;
+    box-shadow: -2px -2px 2px black;
+}
+.homeevent{
+    position: absolute;
+    height: 3.5cm;
+    background-color: rgba(202, 135, 135, 0.795);
+    top: 20cm;
+    width: 60%;
+    border-radius: 8px;
+    left: 11cm;
+    box-shadow: 3px 3px 3px rgb(204, 94, 94);
+}
+.homeevent .jead{
+    position: absolute;
+    color: black;
+    font-family: 'Texturina', serif;
+}
+.homeevent:hover{
+    color: rgba(219, 14, 14, 0.911);
+    transition: 1s;
+    box-shadow: 6px 6px 30px rgba(255, 0, 0, 0.719);
+}
+.last{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.849);
+    top:33.3cm;
+    height:5cm;
+    width: 100%;
+}
+.last h3{
+    text-align: center;
+    color: blanchedalmond;
+    font-family: 'Open Sans', sans-serif;
+}
