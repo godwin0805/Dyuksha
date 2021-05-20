@@ -1,0 +1,79 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <h1 class="dyuksha" >DYUKSHA</h1>
+       <header>
+        <h2 class="navhead">DYUKSHA</h2>
+        <nav class="nav">
+            <ul class="textnav" >
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SPEAKERS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="/signin/">REGISTER/LOGIN</a></li>
+            </ul>
+        </nav>
+        </header> 
+    </div>
+    <div class="bottom">
+    </div>
+    <div class="not1">
+        <h4 style="color: rgba(12, 11, 11, 0.966); position:absolute; margin-left: 18px; margin-top: 9px;
+        font-size: 28px; font-family: 'Caveat', cursive;">Notifications</h4>
+        {% for no in notif %}
+            <div class="not2">
+                <p>{{no.noti}}</p>
+            </div>
+        {% endfor %}
+    </div> 
+
+
+
+
+
+    <div class="homeevent" >
+        <h2 class="jead" style="position: absolute;
+        color: black; font-family: 'Caveat', cursive; margin-top: 6px; margin-left: .7cm;">EVENTS</h2>
+        {% for eve in events %}
+        <div class="eventbox">
+            <img  src="{{eve.image.url}}" alt="event image">
+            <h3>{{eve.event}}</h3>
+            <ul class="eventtext" style="position: absolute; left:7.4cm; top: 1cm; text-decoration: none; text-align: center;">
+                <li>{{eve.date}}</li>
+                <li>{{eve.time}}</li>
+                <li>{{eve.location}}</li>
+                <li>{{eve.No_of_participants}}</li>
+                <p>{{eve.description}}</p>
+            </ul>
+        </div>
+        {% endfor %}
+
+    </div> 
+    
+    <div class="last">
+        <h3>Terms and conditions</h3>
+        <ul class="ul1" style="margin-left: 8cm; margin-top: 1cm; position: absolute; ">
+            <li><a style="text-decoration: none;" href="#">About us</a></li>
+            <li><a  href="#">Contact us</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <ul class="ul2" style="margin-left: 24cm; margin-top: 1cm; position: absolute;" >
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</body>
+</html>
