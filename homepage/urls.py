@@ -9,5 +9,5 @@ urlpatterns=[
     path("signin",views.signin),
     path("signup/signin",views.signin),
     path("homepage/",views.homepage),
-    path("signup/createevent",views.createevent)
+    path("signup/createevent",views.createevent),
     ]

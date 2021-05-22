@@ -4,6 +4,8 @@ from .models import EventData, Notifications
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from django. contrib. auth import authenticate,login
+# from django.views.generic import 
+
 
 def homepage(request):
     event = EventData.objects.all()
@@ -32,10 +34,15 @@ def signup(request):
                 user = User.objects.create_user(username=first_name,password=password1,email=email)
                 user.save();
                 return render(request,'signin.html')
+        else:
+            messages.info(request,"password not match")
+            return render(request,'signin.html')
     else:
-        messages.info(request,"Password not matching")
         return render(request,'signin.html')
         
+from django.views.decorators.csrf import csrf_exempt
+
+@csrf_exempt
 
 
 def signin(request):
