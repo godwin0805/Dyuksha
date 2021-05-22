@@ -1,12 +1,19 @@
 {% load static %}
-<form class="reg-form">
-<link rel="stylesheet" type="text/css" href="{% static 'css/createevent.css' %}">
-<div>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<h1><u><i>Create New Event</i></u></h1>
-<h2>DYUKSHA</h2>
-</head></div>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet"  href="{% static 'css/createevent.css' %}">
+   <title>Document</title>
+</head>
+<body>
    
+<h1><u><i>Create New Event</i></u></h1>
+<h2>DYUKSHA</h2></div>
+
+   <form class="reg-form">
    <div class="field-row">
       <label class="form-label" for="Eventname">Event Title:</label>
       <input type="text" id="firstName" class="field text-field first-name-field" required>
@@ -53,3 +60,5 @@
       <button style="background-color: rgba(47, 47, 185, 0.705); color:white; border-radius:5px;" class="form-button">Back To Home</button>
    </div>
 </form>
+</body>
+</html>

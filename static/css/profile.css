@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 html,body{
     margin: 0;
     padding: 0;
@@ -8,12 +9,51 @@ html,body{
 #main{
     position: absolute;
     background-image: url(../image/homebackground.jpg);
-    width: 100%;
-    height: 100vh;
-    background-size: 1400px 630px;
+    width: 72%;
+    height: 91vh;
+    background-size: 980px 570px;
+    left:10cm;
 }
+
+.forprofile{
+    position: absolute;
+    top: 1.45cm;
+    width:28%;
+    height: 91vh;
+    background-color: rgba(0, 0, 0, 0.911);
+
+}
+
+.forprofile .profilebox{
+    position: absolute;
+    width: 9cm;
+    height: 3cm;
+    background-color: white;
+    top: 1.1cm;
+    left: .4cm;
+    border-radius: 6px;
+    background-image: url(../image/cartoon.jpg);
+    background-size: 2.5cm 2.5cm;
+    background-repeat: no-repeat;
+    background-position-x: .3cm;
+    background-position-y: .26cm;
+}
+.forprofile .profilebox h3 ,h4,h5{
+    position: relative;
+    left: 3cm;
+    top: 0cm;
+    line-height: .3cm;
+}
+.forprofile .profilebox h4,h5{
+
+    position: relative;
+    left: 3.5cm;
+    line-height: .1;
+    font-family: 'Courgette', cursive;
+}
+
 header{
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgba(0, 0, 0, 0.856);
     width: 100%;
     height: 55px;
     border-radius: 4px;
@@ -60,8 +100,8 @@ div h1{
     color: rgba(27, 24, 24, 0.932);
     font-family: 'Reggae One', cursive;
     font-size: 85px;
-    left: 10cm;
-    top: 5cm;
+    left: 7cm;
+    top: 3cm;
 }
 div h1:hover{
     color: rgba(20, 2, 2, 0.705);
@@ -76,22 +116,22 @@ div h1:hover{
     height: 16.5cm;
     overflow: auto;
 }
-.not1{
+.forprofile .not1{
     position: absolute;
-    height: 11.5cm;
+    height: 10.8cm;
     background-color: rgb(247, 243, 243);
-    top: 20cm;
-    width: 25%;
+    top: 4.2cm;
+    width: 9cm;
     border-radius: 8px;
-    left: .3cm;
+    left: .4cm;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.76);
     overflow-y: scroll;
 }
-.not1 .not2{
+.forprofile .not1 .not2{
     position: relative;
     background-color: rgb(255, 255, 255);
     height: 2.2cm;
-    width: 8cm;
+    width: 7cm;
     margin-left: .5cm;
     top: 1.2cm;
     border-radius: 8px;
@@ -105,11 +145,11 @@ div h1:hover{
 .homeevent{
     position: absolute;
     height:11.5cm;
-    background-color: rgba(248, 244, 244, 0.966);
-    top: 20cm;
+    background-color: rgb(248, 244, 244);
+    top: 19cm;
     width: 37%;
     border-radius: 8px;
-    left: 9.4cm;
+    left: 3cm;
     box-shadow: 3px 3px 3px rgb(204, 94, 94);
     overflow-y: scroll;
 }
@@ -155,10 +195,10 @@ div h1:hover{
     position: absolute;
     height:11.5cm;
     background-color: rgba(248, 244, 244, 0.966);
-    top: 20cm;
+    top: 19cm;
     width: 35.9%;
     border-radius: 8px;
-    left: 22.7cm;
+    left: 19.7cm;
     box-shadow: 3px 3px 3px rgb(248, 191, 4);
     overflow-y: scroll;
 }

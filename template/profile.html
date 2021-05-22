@@ -10,34 +10,50 @@
     <title>Home page</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
-<body>
+<body>  
+    <div> 
+        <header>
+         <h2 class="navhead">DYUKSHA</h2>
+         <nav class="nav">
+             <ul class="textnav" >
+                 <li><a href="/homepage/">HOME</a></li>
+                 <li><a href="#">SPEAKERS</a></li>
+                 <li><a href="#">CONTACT</a></li>
+                 <li><a href="#">ABOUT</a></li>
+                 <li><a href="/homepage/">LOGOUT</a></li>
+             </ul>
+         </nav>
+         </header> </div>
+    <div class="forprofile">
+        <h3 style="color: white; position:absolute; top:-.2cm; left:.5cm; font-family: 'Kaushan Script', cursive;">Profile</h3>
+        <div class="profilebox">
+            <h3 style="font-family: 'Architects Daughter', cursive;">Welcome,</h3>
+            <h4>{{user.username}}</h4>
+            <h5>{{ user.email }}</h5>
+
+        </div>
+        <div class="not1">
+            <h4 style="color: rgba(12, 11, 11, 0.966); position:absolute; left:.2cm; top:-.3cm;
+            font-size: 28px; font-family: 'Caveat', cursive;">Notifications</h4>
+            {% for no in notif %}
+                <div class="not2">
+                    <p>{{no.noti}}</p>
+                </div>
+            {% endfor %}
+        </div> 
+    </div>
+    
     <div id="main">
         <h1 class="dyuksha" >DYUKSHA</h1>
-       <header>
-        <h2 class="navhead">DYUKSHA</h2>
-        <nav class="nav">
-            <ul class="textnav" >
-                <li><a href="/homepage/">HOME</a></li>
-                <li><a href="#">SPEAKERS</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="/homepage/">LOGOUT</a></li>
-            </ul>
-        </nav>
-        </header> 
     </div>
     <div class="bottom">
     </div>
-    <div class="not1">
-        <h4 style="color: rgba(12, 11, 11, 0.966); position:absolute; margin-left: 18px; margin-top: 9px;
-        font-size: 28px; font-family: 'Caveat', cursive;">Notifications</h4>
-        {% for no in notif %}
-            <div class="not2">
-                <p>{{no.noti}}</p>
-            </div>
-        {% endfor %}
-    </div> 
+    
 
 
 
