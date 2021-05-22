@@ -1,5 +1,6 @@
+{% load static %}
 <form class="reg-form">
-<link rel="stylesheet" type="text/css" href="rf.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/createevent.css' %}">
 <div>
 <head>
 <h1><u><i>Create New Event</i></u></h1>
@@ -39,16 +40,16 @@
    </div>
    <div class="field-row">
       <label class="form-label" for="eventban">Event Banner:</label>
-      <input type="file" id="hs" class="field text-field hs-field" required>
+      <input style=" border-radius: 5px; color:black" type="file" id="hs" class="field text-field hs-field" required>
       <span class="message"></span>
    </div>
    
    <div class="field-row">
       <label class="form-label"></label>
-      <button class="form-button">Register</button>
+      <button style="background-color: rgb(32, 185, 2); color:white; border-radius:5px;" class="form-button">Register</button>
    </div>
     <div class="field-row">
       <label class="form-label"></label>
-      <button class="form-button">Back To Home</button>
+      <button style="background-color: rgba(47, 47, 185, 0.705); color:white; border-radius:5px;" class="form-button">Back To Home</button>
    </div>
 </form>
