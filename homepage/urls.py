@@ -10,5 +10,7 @@ urlpatterns=[
     path("signup/signin",views.signin),
     path("homepage/",views.homepage),
     path("signup/createevent",views.createevent),
-    path("signup/event_create",views.event_create,name="event_create")
+    path("signup/event_create",views.event_create,name="event_create"),
+    path("signup/register",views.register,name="register"),
+    path("signup/registerdone",views.registerdone)
     ]

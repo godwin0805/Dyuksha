@@ -59,11 +59,11 @@
 
 
 
-    <div class="homeevent" >
+    <div class="homeevent" style="width: 22cm; left:6.5cm;" >
         <h2 class="jead" style="position: absolute;
         color: black; font-family: 'Caveat', cursive; margin-top: 6px; margin-left: .7cm;">EVENTS</h2>
         {% for eve in events %}
-        <div class="eventbox">
+        <div style="width: 20cm; background-color: rgba(88, 74, 74, 0.788);" class="eventbox">
             <img  src="{{eve.image.url}}" alt="event image">
             <h3>{{eve.event}}</h3>
             <ul class="eventtext" style="position: absolute; left:7.4cm; top: 1cm; text-decoration: none; text-align: center;">
@@ -77,24 +77,10 @@
         {% endfor %}
 
     </div> 
-    <div class="homeevent1" >
-        <h2 class="jead1" style="position: absolute;
-        color: black; font-family: 'Caveat', cursive; margin-top: 6px; margin-left: .7cm;">MY EVENTS</h2>
-        <div class="eventbox1">
-            <img  src="/static/image/homebackground.jpg" alt="event image">
-            <h3>{{eve.event}}</h3>
-            <ul class="eventtext1" style="position: absolute; left:6cm; top: 1cm; text-decoration: none; text-align: center;">
-                <li>{{eve.date}}</li>
-                <li>{{eve.time}}</li>
-                <li>{{eve.location}}</li>
-                <li>{{eve.No_of_participants}}</li>
-                <p>{{eve.description}}</p>
-            </ul>
-        </div>
 
-    </div> 
+ 
     <div class="buttons" style="position: absolute; top:33.5cm; left:12cm" >
-        <button onclick="" style="position: absolute; height:1cm ; width:4.5cm;">REGISTER FOR EVENT</button>
+        <button onclick="document.location='register'" style="position: absolute; height:1cm ; width:4.5cm;">REGISTER FOR EVENT</button>
         <button onclick="document.location='createevent'" style="position: absolute; height:1cm; left:6cm; width:4.5cm;">CREATE AN EVENT</button>
     </div>
     

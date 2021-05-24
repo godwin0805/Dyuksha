@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="position: absolute; left:38%; top:3cm; line-height:1.3cm; width:10cm; ">
+        <h2 style="color:rgb(104, 16, 20);">Register For Event</h2>
+        <form action="registerdone" method="POST">
+            {% csrf_token %}
+            <label style="font-weight: bold;" for="events">Event name</label>
+            <select style="width: 5cm; height:.9cm; background-color:rgba(204, 193, 193, 0.753); border-radius:5px;" name="event_name" id="evnt">
+            {% for eve in events %}
+            <option style="font-weight: bolder;" value="{{ eve.event }}">{{eve.event}}</option>
+            {% endfor %}
+            </select><br>
+            <label style="font-weight: bold;" for="">Team Name</label>
+            <input style="height: .6cm; width:5cm; border-radius:5px;" name="Team_Name" type="text" placeholder="Team name"><br>
+            <label style="font-weight: bold;" for="text">No of Participants</label>
+            <select style="width: .9cm; height:.7cm; background-color:rgba(204, 193, 193, 0.753); border-radius:5px;" name="no_of_participants" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br>
+            <label style="font-weight: bold;" for="email">Email id</label>
+            <input style="height: .6cm; width:5cm; border-radius:5px;" name="College_Email_ID" type="email" placeholder="Email"><br>
+            <label style="font-weight: bold;" for="number">Mobile Number</label>
+            <input style="height: .6cm; width:5cm; border-radius:5px;" name="Mob_No" type="text" placeholder="Mobile Number"><br>
+            <button style="position:absolute; left:5cm; background-color:rgb(3, 126, 3); border-radius:5px; height:.8cm; width:3cm; " >Register</button>
+        </form>
+    </div>
+</body>
+</html>
