@@ -4,6 +4,7 @@
 html,body{
     margin: 0;
     padding: 0;
+    background-color: rgb(84, 109, 109);
 }
 #main{
     position: absolute;
@@ -84,12 +85,12 @@ div h1:hover{
     width: 25%;
     border-radius: 8px;
     left: .8cm;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.76);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.76);
     overflow-y: scroll;
 }
 .not1 .not2{
     position: relative;
-    background-color: rgba(226, 8, 8, 0.527);
+    background-color: rgba(68, 142, 202, 0.527);
     height: 2.2cm;
     width: 8cm;
     margin-left: .5cm;
@@ -110,12 +111,12 @@ div h1:hover{
     width: 50%;
     border-radius: 8px;
     left: 11cm;
-    box-shadow: 3px 3px 3px rgb(204, 94, 94);
+    box-shadow: 3px 3px 3px rgb(6, 5, 5);
     overflow-y: scroll;
 }
 .homeevent .eventbox{
     position: relative;
-    background-color: rgba(207, 70, 70, 0.788);
+    background-color: rgba(124, 114, 114, 0.788);
     height: 5.5cm;
     width: 16cm;
     margin-left: .5cm;
@@ -129,9 +130,9 @@ div h1:hover{
     font-family: 'Texturina', serif;
 }
 .homeevent .eventbox:hover{
-    color: rgba(219, 14, 14, 0.911);
+    color: rgba(4, 15, 49, 0.719);
     transition: 1s;
-    box-shadow: 6px 6px 30px rgba(255, 0, 0, 0.719);
+    box-shadow: 6px 6px 30px rgba(49, 97, 129, 0.719);
 }
 .eventbox img{
     position: absolute;
@@ -162,4 +163,32 @@ div h1:hover{
     text-align: center;
     color: blanchedalmond;
     font-family: 'Open Sans', sans-serif;
+}
+.line-1{
+    position: absolute;
+    top: 95%;
+    left: 30%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgb(2, 5, 37);
+    font-size: 190%;
+    font-family: 'Reggae One', cursive;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(50) 1s 1 normal both,
+             blinkTextCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 26em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(25,25,25,);}
+  to{border-right-color: transparent;}
 }
