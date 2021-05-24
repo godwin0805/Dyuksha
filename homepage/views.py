@@ -108,6 +108,4 @@ def registerdone(request):
             edit = True
     except ObjectDoesNotExist:
         obj = None
-    
-    xx=RegistrationModel.objects.get(user=request.user)
-    return render(request,'profile.html',{'reg':xx})
+    return render(request,'profile.html')
