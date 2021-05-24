@@ -61,12 +61,12 @@
 
     <div class="homeevent" >
         <h2 class="jead" style="position: absolute;
-        color: black; font-family: 'Caveat', cursive; margin-top: 6px; margin-left: .7cm;">UPCOMING EVENTS</h2>
+        color: black; font-family: 'Caveat', cursive; margin-top: 6px; margin-left: .7cm;">EVENTS</h2>
         {% for eve in events %}
         <div class="eventbox">
             <img  src="{{eve.image.url}}" alt="event image">
             <h3>{{eve.event}}</h3>
-            <ul class="eventtext" style="position: absolute; left:6cm; top: 1cm; text-decoration: none; text-align: center;">
+            <ul class="eventtext" style="position: absolute; left:7.4cm; top: 1cm; text-decoration: none; text-align: center;">
                 <li>{{eve.date}}</li>
                 <li>{{eve.time}}</li>
                 <li>{{eve.location}}</li>

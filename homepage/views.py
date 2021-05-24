@@ -11,6 +11,27 @@ def homepage(request):
     event = EventData.objects.all()
     notif = Notifications.objects.all()
     return render(request,'home.html',{'notif':notif,'events':event})
+
+
+def createevent(request):
+    return render(request,'createevent.html')
+
+def event_create(request):
+    event_title=request.POST["event_title"]
+    event_description=request.POST["event_description"]
+    event_date=request.POST["event_date"]
+    event_time=request.POST["event_time"]
+    event_location=request.POST["event_location"]
+    event_banner=request.POST["event_banner"]
+    event_participants =request.POST["event_participants"]
+    
+    eventdata = EventData(image=event_banner,event=event_title,date=event_date,time=event_time,location=event_location,description=event_description,No_of_participants=event_participants)
+    
+    
+    eventdata.save()
+    return render(request,'profile.html')
+
+
 def signup(request):
     event = EventData.objects.all()
     notif = Notifications.objects.all()
@@ -63,5 +84,3 @@ def signin(request):
     else:
         return render(request,'signin.html')
 
-def createevent(request):
-    return render(request,'createevent.html')

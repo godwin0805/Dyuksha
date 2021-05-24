@@ -13,52 +13,50 @@
 <h1><u><i>Create New Event</i></u></h1>
 <h2>DYUKSHA</h2></div>
 
-   <form class="reg-form">
+   <form action="event_create" method="POST" class="reg-form">
+      {% csrf_token %}
    <div class="field-row">
       <label class="form-label" for="Eventname">Event Title:</label>
-      <input type="text" id="firstName" class="field text-field first-name-field" required>
+      <input type="text" name="event_title" id="firstName" class="field text-field first-name-field" required>
       <span class="message"></span>
    </div>
    <div class="field-row">
       <label class="form-label cf" for="lastName">Discription:</label>
-      <input type="text" id="lastName" class="field text-field last-name-field" required>
+      <input name="event_description" type="text" id="lastName" class="field text-field last-name-field" required>
       <span class="message"></span>
    </div>
   
    <div class="field-row">
       <label class="form-label" for="dateOfevent">Date of Event:</label>
-      <input type="date" id="dateOfBirth" class="field date-field dob-field" min="2021-01-01" max="2022-01-01"  required>
+      <input name="event_date" type="date" id="dateOfBirth" class="field date-field dob-field" min="2021-01-01" max="2022-01-01"  required>
       <span class="message"></span>
    </div>
    <div class="field-row">
       <label class="form-label" for="time">Time:</label>
-      <input type="time" id="tel" class="field text-field tel-field" required>
+      <input name="event_time" type="time" id="tel" class="field text-field tel-field" required>
       <span class="message"></span>
    </div>
    <div class="field-row">
       <label class="form-label" for="eventloc">Event Location:</label>
-      <input type="text" id="hs" class="field text-field hs-field" required>
+      <input name="event_location" type="text" id="hs" class="field text-field hs-field" required>
       <span class="message"></span>
    </div>
    <div class="field-row">
       <label class="form-label" for="tel">Maximum no. Of Participants:</label>
-      <input type="tel" id="tel" class="field text-field address-field" required>
+      <input name="event_participants" type="tel" id="tel" class="field text-field address-field" required>
       <span class="message"></span>
    </div>
    <div class="field-row">
       <label class="form-label" for="eventban">Event Banner:</label>
-      <input style=" border-radius: 5px; color:black" type="file" id="hs" class="field text-field hs-field" required>
+      <input name="event_banner" style=" border-radius: 5px; color:black" type="file" id="hs" class="field text-field hs-field" required>
       <span class="message"></span>
    </div>
    
    <div class="field-row">
       <label class="form-label"></label>
-      <button style="background-color: rgb(32, 185, 2); color:white; border-radius:5px;" class="form-button">Register</button>
+      <button name="event_register" style="background-color: rgb(32, 185, 2); color:white; border-radius:5px; height:.8cm; width:2.4cm;" class="form-button">Register</button>
    </div>
-    <div class="field-row">
-      <label class="form-label"></label>
-      <button style="background-color: rgba(47, 47, 185, 0.705); color:white; border-radius:5px;" class="form-button">Back To Home</button>
-   </div>
+    
 </form>
 </body>
 </html>
