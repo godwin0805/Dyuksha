@@ -15,8 +15,8 @@
    
    
 ## How To Configure -
-  -The first thing is to clone the repository.
-  -create a virtual environment to install dependencies in and activate it.(install python and VS Code and setup project environment with virtualenv and pip)
+  1)The first thing is to clone the repository.
+  2)create a virtual environment to install dependencies in and activate it.(install python and VS Code and setup project environment with virtualenv and pip)
 ## How To Run -
-  -Open the folder using VS Code.
-  -Run it by the command: python manage.py runserver
+  1)Open the folder using VS Code.
+  2)Run it by the command: python manage.py runserver
