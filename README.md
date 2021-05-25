@@ -10,6 +10,13 @@
    2.Godwin George U  [ https://github.com/godwin0805 ]
 ## Team ID - BFH/rec22jceM11nZe1Ud/2021
 ## How It Works - 
+   First up all the website displays the home page of the portal.Here the user is able to see the events and notifications about the events.It 
+   contains login/register button when clicked goes to the signin/signup page.If it is a new user he/she first needs to signup by giving the required
+   details.Later she can use signin at anytime by filling the username and password.After signin comes the profile page where she can see events and 
+   notifications.It also contains register and create an event options.If the user clicks register option he/she is able to register for the ongoing events
+   in the form that opens.But if the user clicks on create an event option he/she must fill all the required details in the form that opens and should
+   wait for the approval of the admin.Later the user can go back to the home page and can logout from the website.The admin panel can control the events 
+   and notifications that are to be added to the pages.The data is stored in mysql database.
    
 ## Libraries Used - 
    
