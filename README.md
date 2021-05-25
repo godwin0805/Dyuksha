@@ -6,7 +6,7 @@
    where they can register for the events and can create events.It also has a notification bar where it shows all notifications about the 
    events for which the user have registered.The website has a simple and creative user interface.
 ## Team Members -
-   1.Muhammed Juvail P
+   1.Muhammed Juvail P  [ https://github.com/juvail ]
    2.Godwin George U  [ https://github.com/godwin0805 ]
 ## Team ID - BFH/rec22jceM11nZe1Ud/2021
 ## How It Works - 
@@ -19,7 +19,12 @@
    and notifications that are to be added to the pages.The data is stored in mysql database.
    
 ## Libraries Used - 
-   
+   Django==3.2.3
+   Routes==2.5.1
+   sqlparse==0.4.1
+   virtualenv==20.4.6
+   virtualenvwrapper==4.8.4
+   ipython==7.20.0
    
 ## How To Configure -
   1)The first thing is to clone the repository.
