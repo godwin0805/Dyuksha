@@ -9,6 +9,14 @@
    1.Muhammed Juvail P  [ https://github.com/juvail ]
    2.Godwin George U  [ https://github.com/godwin0805 ]
 ## Team ID - BFH/rec22jceM11nZe1Ud/2021
+## Languages:
+   Django for backend
+   HTML5 and CSS for front end
+   sqlite3 for database
+## Admin login
+   username:dyuksha
+   password:Dyuksha@123
+
 ## How It Works - 
    Video link
       https://drive.google.com/file/d/1fnXqnvH_ae1m1W0IE2Qenlht9VaawY8M/view?usp=drivesdk
