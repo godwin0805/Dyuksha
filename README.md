@@ -10,6 +10,9 @@
    2.Godwin George U  [ https://github.com/godwin0805 ]
 ## Team ID - BFH/rec22jceM11nZe1Ud/2021
 ## How It Works - 
+   Video link
+      https://drive.google.com/file/d/1fnXqnvH_ae1m1W0IE2Qenlht9VaawY8M/view?usp=drivesdk
+   
    First up all the website displays the home page of the portal.Here the user is able to see the events and notifications about the events.It 
    contains login/register button when clicked goes to the signin/signup page.If it is a new user he/she first needs to signup by giving the required
    details.Later she can use signin at anytime by filling the username and password.After signin comes the profile page where she can see events and 
@@ -21,11 +24,13 @@
 ## Libraries Used - 
    Django==3.2.3
    Routes==2.5.1
-   sqlparse==0.4.1
-   virtualenv==20.4.6
-   virtualenvwrapper==4.8.4
-   ipython==7.20.0
-   
+   Pillow          8.2.0
+   pip             20.3.4
+   pkg-resources   0.0.0
+   psycopg2        2.8.6
+   pytz            2021.1
+   setuptools      44.1.1
+   sqlparse        0.4.1
 ## How To Configure -
   1)The first thing is to clone the repository.
   2)create a virtual environment to install dependencies in and activate it.(install python and VS Code and setup project environment with virtualenv and pip)
