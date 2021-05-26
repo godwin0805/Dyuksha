@@ -10,10 +10,6 @@
    2.Godwin George U  [ https://github.com/godwin0805 ]
 ## Team ID - BFH/rec22jceM11nZe1Ud/2021
 ## How It Works - 
-   Drive link for video
-   https://drive.google.com/file/d/1fnXqnvH_ae1m1W0IE2Qenlht9VaawY8M/view?usp=drivesdk
-
-
    First up all the website displays the home page of the portal.Here the user is able to see the events and notifications about the events.It 
    contains login/register button when clicked goes to the signin/signup page.If it is a new user he/she first needs to signup by giving the required
    details.Later she can use signin at anytime by filling the username and password.After signin comes the profile page where she can see events and 
