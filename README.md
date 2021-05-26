@@ -9,6 +9,8 @@
    1.Muhammed Juvail P  [ https://github.com/juvail ]
    2.Godwin George U  [ https://github.com/godwin0805 ]
 ## Team ID - BFH/rec22jceM11nZe1Ud/2021
+## Link to product walkthrought-
+      https://drive.google.com/file/d/1fnXqnvH_ae1m1W0IE2Qenlht9VaawY8M/view?usp=drivesdk
 ## Languages:
    Django for backend
    HTML5 and CSS for front end
@@ -16,10 +18,10 @@
 ## Admin login
    username:dyuksha
    password:Dyuksha@123
-
+## Live link-
+      https://fast-meadow-56417.herokuapp.com/
 ## How It Works - 
-   Video link
-      https://drive.google.com/file/d/1fnXqnvH_ae1m1W0IE2Qenlht9VaawY8M/view?usp=drivesdk
+      
    
    First up all the website displays the home page of the portal.Here the user is able to see the events and notifications about the events.It 
    contains login/register button when clicked goes to the signin/signup page.If it is a new user he/she first needs to signup by giving the required
@@ -30,8 +32,8 @@
    and notifications that are to be added to the pages.The data is stored in mysql database.
    
 ## Libraries Used - 
-   Django==3.2.3
-   Routes==2.5.1
+   Django          3.2.3
+   Routes          2.5.1
    Pillow          8.2.0
    pip             20.3.4
    pkg-resources   0.0.0
